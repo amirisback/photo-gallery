@@ -1,45 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Gallery with prefers-reduced-motion</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700"><link rel="stylesheet" href="style/style.css">
+	<meta charset="UTF-8">
+	<title>CodePen - Gallery with prefers-reduced-motion</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700">
+	<link rel="stylesheet" href="style/style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<ul id="ul_image">
-</ul>
-<!-- partial -->
-  
-<script>
-	const ul = document.getElementById("ul_image")
-	const images = [
-		"assets/images/header-background.jpg",
-		"assets/images/header-background.jpg",
-		"assets/images/header-background.jpg",
-		"assets/images/header-background.jpg",
-		"assets/images/header-background.jpg",
-	]
+	<!-- partial:index.partial.html -->
+	<ul id="ul_image">
+	</ul>
+	<!-- partial -->
 
-images.forEach((element, index) => {
-	const li = document.createElement("li")
-	const a = document.createElement("a")
-	const figure = document.createElement("figure")
-	const figcaption = document.createElement("figcaption")
-    const img = document.createElement("img")
-
-	figcaption.innerText = `${element} ${index}`
-	
-    img.src = element
-
-	figure.appendChild(img)
-	figure.appendChild(figcaption)
-	a.appendChild(figure)
-	li.appendChild(a)
-    ul.appendChild(li)
-});
-</script>
+	<script src="./main-node.js" modul="">
+	</script>
 
 </body>
+
 </html>

@@ -1,13 +1,9 @@
-const ul = document.getElementById("ul_image")
-const images = [
-    "assets/images/header-background.jpg",
-    "assets/images/header-background.jpg",
-    "assets/images/header-background.jpg",
-    "assets/images/header-background.jpg",
-    "assets/images/header-background.jpg",
-]
+var fs = require('fs');
+var files = fs.readdirSync('/assets/photos/');
 
-images.forEach((element, index) => {
+const ul = document.getElementById("ul_image")
+
+files.forEach((element, index) => {
     const li = document.createElement("li")
     const a = document.createElement("a")
     const figure = document.createElement("figure")
